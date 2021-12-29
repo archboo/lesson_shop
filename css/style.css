@@ -7,9 +7,12 @@
     --grey-bkg: #F8F8F8;
     --grey: #9F9F9F;
     --grey-text: #5D5D5D;
+    --grey-form: #E1E1E1;
     --black-original: #000000;
     --black-bkg: #222224;
     --white-text: #FBFBFB;
+    --white: #fff;
+    --grey-brdr: #A4A4A4;
 }
 
 body {
@@ -66,7 +69,7 @@ body {
 }
 
 .header__menu-btn {
-    border: 1px solid;
+    border: 0px solid;
     background-color: transparent;
 }
 
@@ -176,12 +179,36 @@ body {
     }
 
 .products__item {
+    position: relative;
     width: 360px;
     min-height: 580px;
     display: flex;
     flex-direction: column;
     background-color: var(--grey-bkg);
     margin-bottom: 30px;
+}
+
+.products__item-img_add {
+    display: none;
+    position: absolute;
+    top: 40%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.products__item-overlay:before {
+    display: none;
+    content: '';
+    width: 100%;
+    min-height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+}
+
+.products__item:hover .products__item-overlay:before, 
+.products__item:hover .products__item-img_add {
+    display: block;
 }
 
 .products__item-title{
@@ -218,6 +245,11 @@ body {
     color: var(--pink-color);
     padding: 14px 38px;
     border: 1px solid;
+}
+
+.product__btn:hover {
+    background-color: var(--pink-color);
+    color: var(--white-text);
 }
 
 .product__btn-wrp {
@@ -325,6 +357,36 @@ body {
     margin-bottom: 32px;
 }
 
+.review__sub-form__email {
+    border: none;
+    background-color: var(--grey-form);
+    width: 300px;
+    height: 49px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left: 22px;
+    text-align: left;
+    border-radius: 31px 0px 0px 31px;
+
+}
+
+.review__sub-form__btn {
+    border: none;
+    width: 100px;
+    height: 51px;
+    background-color: var(--pink-price);
+    border-radius: 0px 31px 31px 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--white);
+}
+
+.review__sub-form {
+    display: flex;
+}
+
 .legends {
     background-color: var(--black-bkg);
 }
@@ -354,4 +416,111 @@ body {
 
 .legends__item {
     margin-left: 7px;
+}
+
+.title {
+    height: 148px;
+    background-color: var(--pink-bkg);
+    margin-bottom: 64px;
+}
+
+.title__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--pink-price);
+    padding-top: 59px;
+}
+
+.feature__registration__username-title, .feature__registration__data-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: var(--grey-text);
+    margin-bottom: 20px;
+}
+
+.feature__registration__username-first_name, .feature__registration__username-second_name, .feature__registration__data-email, .feature__registration__data-password {
+    width: 342px;
+    height: 44px;
+    border: 1px solid;
+    border-color: var(--grey-brdr);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.feature__wrp {
+    display: flex;
+}
+
+.feature__registration__username-radiocheck_label {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+}
+
+.feature__registration__username-radiocheck_radio {
+    margin-top: 31px;
+    margin-bottom: 35px;
+}
+
+.feature__registration__subtitle {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: var(--grey);
+    width: 358px;
+    margin-bottom: 39px;
+}
+
+.feature__registration__btn {
+    border: none;
+    background-color: var(--pink-price);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text);
+    width: 167px;
+    height: 50px;
+    margin-bottom: 96px;
+}
+
+.feature__registration__btn-arrow {
+    padding-left: 20px;
+    fill: var(--white-text);
+}
+
+.feature__information__title, .feature__information__subtitle, .feature__information__list {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: var(--black-original);
+    margin-bottom: 22px;
+}
+
+.feature__information__title {
+    text-transform: uppercase;
+}
+
+.feature__information__item {
+    position: relative;
+    margin-bottom: 16px;
+    left: 40px;
+}
+
+.feature__information__item:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 8px;
+    left: -40px;
+    position: absolute;
+    background-image: url(../img/done.svg);
+    background-size: 20px 16px;
 }
