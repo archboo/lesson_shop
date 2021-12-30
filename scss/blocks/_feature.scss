@@ -1,0 +1,91 @@
+.feature__registration__username-title, .feature__registration__data-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    color: var(--grey-text);
+    margin-bottom: 20px;
+}
+
+.feature__registration__username-first_name, .feature__registration__username-second_name, .feature__registration__data-email, .feature__registration__data-password {
+    width: 342px;
+    height: 44px;
+    border: 1px solid;
+    border-color: var(--grey-brdr);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+.feature__wrp {
+    display: flex;
+}
+
+.feature__registration__username-radiocheck_label {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+}
+
+.feature__registration__username-radiocheck_radio {
+    margin-top: 31px;
+    margin-bottom: 35px;
+}
+
+.feature__registration__subtitle {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: var(--grey);
+    width: 358px;
+    margin-bottom: 39px;
+}
+
+.feature__registration__btn {
+    border: none;
+    background-color: var(--pink-price);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-text);
+    width: 167px;
+    height: 50px;
+    margin-bottom: 96px;
+}
+
+.feature__registration__btn-arrow {
+    padding-left: 20px;
+    fill: var(--white-text);
+}
+
+.feature__information__title, .feature__information__subtitle, .feature__information__list {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    color: var(--black-original);
+    margin-bottom: 22px;
+}
+
+.feature__information__title {
+    text-transform: uppercase;
+}
+
+.feature__information__item {
+    position: relative;
+    margin-bottom: 16px;
+    left: 40px;
+}
+
+.feature__information__item:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 8px;
+    left: -40px;
+    position: absolute;
+    background-image: url(../img/done.svg);
+    background-size: 20px 16px;
+}
