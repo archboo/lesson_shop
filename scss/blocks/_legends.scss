@@ -26,5 +26,33 @@
 }
 
 .legends__item {
-    margin-left: 7px;
+    background-color: var(--white);
+    width: 32px;
+    height: 32px;
+    margin-left: 7px; 
+}
+
+.legends__item-img {
+    display: block;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legends__item-img__path {
+    fill: var(--black-bkg);
+ 
+}
+
+.legends__item-img__path:hover, .legends__item:hover, .legends__item-img__path:focus, .legends__item:focus, .legends__item-img__path:active, .legends__item:active {
+    background-color: var(--pink-price);
+    fill: var(--white);
+}
+
+
+@media (max-width: 767px) {
+    .legends__wrp {
+        flex-flow: column wrap; 
+        align-items: center;
+    }
 }

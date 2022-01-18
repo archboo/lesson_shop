@@ -19,3 +19,10 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px; }
+
+@media (max-width: 1599px) {
+  .container {
+    width: 736px; } }
+@media (max-width: 767px) {
+  .container {
+    width: 375px; } }
