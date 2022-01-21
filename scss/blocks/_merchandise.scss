@@ -1,0 +1,109 @@
+.merchandise__box {
+    position: relative;
+    margin-top: -100px;
+    width: auto;
+    height: 601px;
+    border: 1px solid var(--grey-product-bkg);
+    background-color: white;
+    margin-bottom: 129px;
+}
+
+.merchandise__box-title {
+    position: relative;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: var(--pink-price);
+    margin-top: 64px;
+    text-align: center;
+}
+
+.merchandise__box-title::after {
+    position: absolute;
+    content: '';
+    background-color: var(--pink-price);
+    width: 63px;
+    height: 3px;
+    top: 30px;
+    left: 540px;
+}
+
+.merchandise__box-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: var(--grey-text);
+    margin-top: 64px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.merchandise__box-text {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+    max-width: 560px;
+    min-height: auto;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.merchandise__box-price {
+    position: relative;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    color: var(--pink-price);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.merchandise__box-price::after {
+    position: absolute;
+    content: '';
+    background-color: var(--grey);
+    width: 641px;
+    height: 0.1px;
+    top: 100px;
+    left: 250px;
+}
+
+.merchandise__box-form-select__wrp {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 48px;
+}
+
+.merchandise__box-form-select__1, .merchandise__box-form-select__2, .merchandise__box-form-select__3 {
+    display: block;
+    width: auto;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.merchandise__box-btn {
+    margin-left: 464px;
+    margin-right: auto;
+
+}

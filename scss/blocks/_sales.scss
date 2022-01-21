@@ -5,13 +5,14 @@
 }
 
 .sales__item {
-    width: 360px;
+    width: 31%;
     min-height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 0 0 30px;
+    background-size: cover;
 }
 
 .sales__item--woman {
@@ -20,7 +21,7 @@
 
 
 .sales__item--man {
-    background-image: url(../img/for_man.png); 
+    background-image: url(../img/for_man.png);
 }
 
 .sales__item--kids {
@@ -29,8 +30,8 @@
 
 .sales__item--shoes {
     background-image: url(../img/accesories.png);
-    min-width: 100%;
     min-height: 180px;
+    width: 100%;
     margin-bottom: 97px;
 }
 
@@ -50,13 +51,24 @@
     color: var(--pink-color);
 }
 
-@media (max-width: 767px) {
-    .sales__item--shoes, .sales__item--woman, .sales__item--man,.sales__item--kids {
-        max-width: 100%;
+@media (max-width: 1599px) {
+    .sales__item {
+        width: 31%;
     }
-
     .sales__item--shoes {
-        min-width: 343px
+        width: 100%;
+        min-height: 168px;
     }
 }
 
+@media (max-width: 767px) {
+    .sales__item {
+        width: 100%;
+        min-height: 247px;
+    }
+
+    .sales__item--shoes {
+        width: 100%;
+        min-height: 111px;
+    }
+}

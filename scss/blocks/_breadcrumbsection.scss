@@ -1,0 +1,29 @@
+.breadcrumbsection {
+    height: 148px;
+    background-color: var(--pink-bkg);
+}
+
+.breadcrumb-item__link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey-text);
+}
+
+.breadcrumb-item__link-active {
+    color: var(--pink-price);
+    text-transform: uppercase;
+}
+
+.breadcrumbsection__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--pink-price);
+}
+
+.breadcrumbsection__wrp {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 59px;
+}
