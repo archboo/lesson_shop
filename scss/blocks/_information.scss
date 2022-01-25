@@ -44,4 +44,17 @@
         align-items: center;
         flex-direction: column;
     }
+
+    .information__item {
+        max-width: auto;
+        min-height: auto;
+    }
+
+    .information__item-img {
+        margin-top: 48px;
+    }
+
+    .information__item-text {
+        margin-bottom: 48px;
+    }
 }

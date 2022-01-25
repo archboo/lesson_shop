@@ -1,0 +1,18 @@
+.carousel {
+    width: auto;
+    height: 777px;
+    background-color: var(--grey-product-bkg);
+}
+
+.carousel-item__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 724px;
+} 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--grey-brdr);
+}
+

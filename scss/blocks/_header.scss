@@ -134,3 +134,15 @@
         margin: 0 0 0 16px;
     }
 }
+
+@media (max-width: 767px) {
+    .header__link-hide {
+        display: none;
+    }
+
+    .header__search-form_input {
+        width: 150px;
+        height: 30px;
+
+    }
+}

@@ -5,7 +5,7 @@ body {
   line-height: 16px; }
 
 .container {
-  width: 1140px;
+  width: 61%;
   margin: 0 auto; }
 
 .visually-hidden {
@@ -22,7 +22,7 @@ body {
 
 @media (max-width: 1599px) {
   .container {
-    width: 736px; } }
+    width: 95%; } }
 @media (max-width: 767px) {
   .container {
-    width: 375px; } }
+    width: 95%; } }

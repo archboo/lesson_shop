@@ -52,7 +52,7 @@
 
 @media (max-width: 767px) {
     .legends__wrp {
-        flex-flow: column wrap; 
+        flex-direction: column-reverse;
         align-items: center;
     }
 }
