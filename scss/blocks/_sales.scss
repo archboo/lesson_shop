@@ -29,7 +29,7 @@
 
 .sales__item--shoes {
     background-image: url(../img/accesories.png);
-    width: 100%;
+    min-width: 100%;
     min-height: 180px;
     margin-bottom: 97px;
 }
@@ -49,3 +49,14 @@
     text-transform: uppercase;
     color: var(--pink-color);
 }
+
+@media (max-width: 767px) {
+    .sales__item--shoes, .sales__item--woman, .sales__item--man,.sales__item--kids {
+        max-width: 100%;
+    }
+
+    .sales__item--shoes {
+        min-width: 343px
+    }
+}
+

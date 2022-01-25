@@ -24,28 +24,29 @@
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     width: 232px;
     height: 764px;
+    z-index: 10;
 }
 
 .header__nav-title {
     margin-bottom: 24px;
 }
 
-.nav-sub-item__link-title {
+.header__nav-sub-item__link-title {
     text-decoration: none;
     color: var(--pink-price); 
     margin-top: 24px;
 }
 
-.nav-sub-item__list {
+.header__nav-sub-item__list {
     margin-top: 24px;
     margin-bottom: 20px;
 }
 
-.nav-sub-item__list-item {
+.header__nav-sub-item__list-item {
     margin-bottom: 11px;
 }
 
-.nav-sub-item__list-link {
+.header__nav-sub-item__list-link {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -53,6 +54,18 @@
     text-transform: none;
     color: var(--grey-text);
     margin: 10px;
+}
+
+.header__nav-sub-item__list-link:hover, .header__nav-sub-item__link-title:hover {
+    color: var(--pink-color);
+}
+
+.header__nav-sub-item__list-link:focus, .header__nav-sub-item__link-title:focus {
+    color: var(--grey-text);
+}
+
+.header__nav-sub-item__list-link:active, .header__nav-sub-item__link-title:active {
+    color: var(--pink-price);
 }
 
 .header__wrp {
@@ -64,10 +77,6 @@
 
 .header__logo-form-wrp {
     display: flex;
-}
-
-.header__search {
-    margin: 0 0 0 41px;
 }
 
 .header__link {
@@ -82,4 +91,46 @@
 .header__menu-btn:hover +.header__nav, 
 .header__menu-btn:focus +.header__nav {
     display: block;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search-form_btn {
+    box-sizing: border-box;
+    margin: 0 0 0 41px;
+    border: none;
+    background-color: transparent;
+}
+
+.header__search-form_input {
+    display: none;
+    border: none;
+    background-color: var(--grey-form);
+    width: 300px;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 10px;
+    padding-left: 22px;
+    text-align: left;
+    border-radius: 31px 31px 31px 31px;
+}
+
+.header__search-form_btn:focus +.header__search-form_input, 
+.header__search-form_btn:hover +.header__search-form_input{
+    display: block;
+}
+
+.header__search-form_btn-path:hover, .header__search-form_btn-path:active, .header__search-form_btn-path:focus {
+    fill: var(--pink-color);
+}
+
+@media (max-width: 1599px) {
+    .header__link {
+        margin: 0 0 0 16px;
+    }
 }

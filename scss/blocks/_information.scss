@@ -38,3 +38,10 @@
     color: var(--white-text);
     margin-bottom: 104px;
 }
+
+@media (max-width: 1599px) {
+    .information__list {
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -3,7 +3,12 @@
     margin: 0 0 63px;
 }
 
+.brand__img {
+    object-fit: cover;
+}
+
 .brand__title-wrp {
+    position: relative;
     flex-grow: 1;
     background-color: var(--pink-bkg);
     display: flex;
@@ -12,10 +17,20 @@
 }
 
 .brand__title {
+    position: relative;
     font-size: 48px;
     font-weight: 900;
     line-height: 58px;
     text-transform: uppercase;
+}
+
+.brand__title-wrp::before {
+    position: absolute;
+    content: '';
+    background-color: var(--pink-price);
+    width: 12px;
+    height: 92px;
+    left: 64px;
 }
 
 .brand__subtitle {
@@ -28,4 +43,20 @@
 
 .brand__subtitle-pink {
     color: var(--pink-color);
+}
+
+@media (max-width: 1599px) {
+    .brand__img {
+        min-height: 367px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand {
+        min-height: 367px;
+    }
+    .brand__img {
+        display: none;
+    }
 }

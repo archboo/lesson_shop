@@ -67,7 +67,10 @@
     padding-left: 22px;
     text-align: left;
     border-radius: 31px 0px 0px 31px;
+}
 
+.review__sub-form__email:hover, .review__sub-form__email:focus {
+    outline: 1px solid var(--pink-price);
 }
 
 .review__sub-form__btn {
@@ -82,6 +85,26 @@
     color: var(--white);
 }
 
+.review__sub-form__btn:hover, .review__sub-form__btn:focus, .review__sub-form__btn:active {
+    background-color: var(--pink-color);
+}
+
 .review__sub-form {
     display: flex;
+}
+
+@media (max-width: 1599px) {
+    .review__wrp {
+        flex-direction: column;
+    }
+    .review__sub-form__email {
+        margin-bottom: 140px;
+    }
+}
+
+@media (max-width: 767px) {
+    .review__sub-form__email {
+        width: 200px;
+        margin-bottom: 110px;
+    }
 }
