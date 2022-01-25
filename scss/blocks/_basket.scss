@@ -1,0 +1,194 @@
+.bascket {
+    margin-top: 96px;
+    margin-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket__number-list {
+    position: relative;
+    padding-left: 0px;
+}
+
+.basket__number-list__item {
+    width: 652px;
+    min-height: 306px;
+    margin-bottom: 40px;
+    display: flex;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.basket__number-list__item-title--wrp {
+    position: relative;
+    padding: 22px 0 0 31px;
+}
+
+.basket__number-list__item-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--black-original);
+    margin-bottom: 42px;
+}
+
+.basket__number-list__item-price, 
+.basket__number-list__item-color, 
+.basket__number-list__item-size, 
+.basket__number-list__item-quantity {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 8px;
+    color: var(--grey-text);
+}
+
+.basket__number-list__item-price__total {
+    color: var(--pink-price);
+}
+
+.basket__number-list__item-quantity::after {
+    position: absolute;
+    content: '2';
+    width: 43px;
+    height: 24px;
+    text-align: center;
+    border: 1px solid rgba(234, 234, 234, 1);
+    margin-left: 20px;
+}
+
+.basket__number-list__item-cancel, .basket__number-list__item-cancel__path {
+    position: absolute;
+    top: 28px;
+    right: -52px;
+}
+
+.basket__number-btn--wrp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 72px;
+}
+
+.basket__number-btn__clear {
+    border: 1px solid rgba(164, 164, 164, 1);
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    width: 234px;
+    height: 49px;
+}
+
+.basket__number-btn__continue {
+    border: 1px solid rgba(164, 164, 164, 1);
+    background-color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    box-sizing: border-box;
+    padding: 15px 40px;
+}
+
+.bascket__info {
+    margin-left: 130px;
+}
+
+.bascket__info-data__title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.bascket__info-data__city, .bascket__info-data__state, .bascket__info-data__postcode {
+    width: 342px;
+    height: 44px;
+    border: 1px solid;
+    border-color: var(--grey-brdr);
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.bascket__info-btn__quote {
+    border: 1px solid rgba(164, 164, 164, 1);
+    width: 100px;
+    height: 35px;
+    background-color: white;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 57px;
+}
+
+.bascket__info-total {
+    position: relative;
+    width: 360px;
+    height: 214px;
+    background-color: var(--grey-bkg);
+    padding: 39px 34px;
+}
+
+.bascket__info-total__sub {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.bascket__info-total__sub-price, .bascket__info-total__grand-price {
+    margin-left: 20px;
+}
+
+.bascket__info-total__grand {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+.bascket__info-total__grand::after {
+    position: absolute;
+    content: '';
+    background-color: rgba(226, 226, 226, 1);
+    width: 275px;
+    height: 0.1px;
+    top: 104px;
+    left: 43px;
+}
+
+.bascket__info-total__grand-price {
+    color: var(--pink-price);
+    font-weight: 700;
+}
+
+.bascket__info-total__checkout {
+    background-color: var(--pink-price);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white-color);
+    box-sizing: border-box;
+    padding: 15px 40px;
+    margin-left: 10px;
+}
