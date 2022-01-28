@@ -497,6 +497,41 @@ body {
 .product__wrp__mrgn {
   margin-bottom: 128px; }
 
+.products__item-grid__1 {
+  grid-area: item-1; }
+
+.products__item-grid__2 {
+  grid-area: item-2; }
+
+.products__item-grid__3 {
+  grid-area: item-3; }
+
+.products__item-grid__4 {
+  grid-area: item-4; }
+
+.products__item-grid__5 {
+  grid-area: item-5; }
+
+.products__item-grid__6 {
+  grid-area: item-6; }
+
+.products__item-grid__7 {
+  grid-area: item-7; }
+
+.products__item-grid__8 {
+  grid-area: item-8; }
+
+.products__item-grid__9 {
+  grid-area: item-9; }
+
+.products__list-grid {
+  display: grid;
+  justify-content: space-between;
+  grid-template-areas: "item-1 item-2 item-3" "item-4 item-5 item-6" "item-7 item-8 item-9";
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  margin-bottom: 0px; }
+
 .review {
   background-image: url(../img/photo_subscribe.png);
   background-size: cover;
@@ -971,3 +1006,30 @@ body {
   box-sizing: border-box;
   padding: 15px 40px;
   margin-left: 10px; }
+
+.filter__box-form-select__wrp {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 65px; }
+
+.filter__box-form-select__1, .filter__box-form-select__2, .filter__box-form-select__3 {
+  display: block;
+  width: auto;
+  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #212529;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+  border: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
