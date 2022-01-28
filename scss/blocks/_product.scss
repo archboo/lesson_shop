@@ -125,3 +125,50 @@
 .product__wrp__mrgn {
     margin-bottom: 128px;
 }
+
+.products__item-grid__1 {
+    grid-area: item-1;
+}
+
+.products__item-grid__2 {
+    grid-area: item-2;
+}
+
+.products__item-grid__3 {
+    grid-area: item-3;
+}
+
+.products__item-grid__4 {
+    grid-area: item-4;
+}
+
+.products__item-grid__5 {
+    grid-area: item-5;
+}
+
+.products__item-grid__6 {
+    grid-area: item-6;
+}
+
+.products__item-grid__7 {
+    grid-area: item-7;
+}
+
+.products__item-grid__8 {
+    grid-area: item-8;
+}
+
+.products__item-grid__9 {
+    grid-area: item-9;
+}
+
+.products__list-grid {
+    display: grid;
+    justify-content: space-between;
+    grid-template-areas: "item-1 item-2 item-3"
+    "item-4 item-5 item-6"
+    "item-7 item-8 item-9";
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin-bottom: 0px;
+}
