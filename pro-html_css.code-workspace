@@ -1,0 +1,33 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    },
+    "prettier.htmlWhitespaceSensitivity": "css",
+    "prettier.semi": true,
+    "prettier.useEditorConfig": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "'Cascadia Code PL', Consolas, 'Courier New', monospace",
+    "eslint.validate": ["typescript", "javascript", "vue", "html"],
+    "[*]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "editor.suggest.insertMode": "replace"
+    }
+  }
+}
